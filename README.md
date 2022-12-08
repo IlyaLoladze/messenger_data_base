@@ -3,17 +3,18 @@ The database's architecture for simple messenger. For the messanger example was 
 
 ## Messanger overview
 Description of used entities for messenger's database:
-1.  **USER** -
+1.  **USER**
+    sdsddslsd,ls
 2.  **DEVICE** -
 3.  **VERIFICATION** -
-4.  **CONTACT** -
-5.  **CHANNEL** -
-6.  **POST** -
-7.  **COMMENT** -
-8.  **CHAT** -
-9.  **MESSAGE** -
-10. **BOT** -
-11. **INBOX** -
+5.  **CONTACT** -
+6.  **CHANNEL** -
+7.  **POST** -
+8.  **COMMENT** -
+9.  **CHAT** -
+10.  **MESSAGE** -
+11. **BOT** -
+12. **INBOX** -
 
 
 ### Conceptual level
