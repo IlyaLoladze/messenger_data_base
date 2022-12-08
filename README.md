@@ -1,7 +1,7 @@
 # messenger_data_base
 The database's architecture for simple messenger. For the messanger example was taken a <a href="https://telegram.org" target="_blank">telegram</a>. Made with PostgreSQL / psql.
 
-## Database's design
+## The structure of the database
 Description of used entities for messenger's database:
 1.  **USER** -    
 2.  **DEVICE** -
