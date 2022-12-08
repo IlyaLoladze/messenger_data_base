@@ -8,12 +8,12 @@ Description of used entities for messenger's database:
 3.  **VERIFICATION** - every time user logs in from new device he should pass the verification by writing the verification code, which is send by messenger on the user's phone or other verified device.
 5.  **CONTACT** - other user that was added to user's personal contact book for quick search of needed chat and / or showing personal data only for chosen users (for example, the settings may be so, that nobody can see user's phone number except of his contacts).
 6.  **CHANNEL** - often a thematic group, where only creater can post some messages and other users (subscribers of the channel) can comment these posts. It may be a mass media, a personal or company's blog and etc. 
-7.  **POST** - 
-8.  **COMMENT** -
-9.  **CHAT** -
-10. **MESSAGE** -
-11. **BOT** -
-12. **INBOX** -
+7.  **POST** - a separate piece of text in channel that was written by channel's creator. The post can be commented by other users.
+8.  **COMMENT** - a comment to channel's post, that can be written by any user.
+9.  **CHAT** - a chat between two users (personal chat), one user and one bot (bot chat) or many users (group), where every participant can write messages.
+10. **MESSAGE** - a separate pice of text in chat, which can be written by bot or user.
+11. **BOT** - a programmed service, which is created by users and can communicate with other users in chats. It may be a shop's assistant, that shows different products, a service for booking tickets or converting images and etc.
+12. **INBOX** - a folder made by users, which contains chosen chats and channels. Every user has a "default" inbox with all user's chats and channels. However, user can create separate "custom" inboxes to sort everything. For example, he can create inbox with name "work", where all chats and channels related to his work will be placed (but after this they also stay in a "default" inbox).
 
 
 ### Conceptual level
