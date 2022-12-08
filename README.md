@@ -13,8 +13,5 @@ The database's architecture for simple messenger. Made with PostgreSQL / psql
 ![](https://github.com/IlyaLoladze/messenger_data_base/blob/main/ERD/Physical%20level.png)
 *was made in <a href="https://dbeaver.io" target="_blank">DBeaver</a>*
 
-<a href="https://erdplus.com" target="_blank">erdplus</a>
-<a href="https://www.diagrams.net/blog/move-diagrams-net" target="_blank">diagrams.net</a>
-<a href="https://dbeaver.io" target="_blank">DBeaver</a>
 
 
