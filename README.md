@@ -4,6 +4,7 @@ The database's architecture for simple messenger. For the messanger example was 
 ## Messanger overview
 Description of used entities for messenger's database:
 1.  **USER**
+    
     sdsddslsd,ls
 2.  **DEVICE** -
 3.  **VERIFICATION** -
