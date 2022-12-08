@@ -1,11 +1,3 @@
--- for me
-
-CREATE DATABASE messanger_data_base;
-\c messanger_data_base
-
-
--- for project
-
 CREATE TABLE IF NOT EXISTS public.user (
 	id BIGSERIAL NOT NULL PRIMARY KEY,
 	created TIMESTAMP NOT NULL,
