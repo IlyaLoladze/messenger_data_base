@@ -8,7 +8,25 @@ To create all tables with corresponding relations:
 ```
 
 ```
-SELECT * FROM public.user limit 100;
+create function yandexMarketSchema.get_orders_by_user_id(@userId int)
+returns table
+as
+return (
+	Select *
+	from yandexMarketSchema.Order as yms_order
+	where Id like @userId
+);
+go
+
+create function yandexMarketSchema.get_ads_by_store_id(@storeId int)
+returns table
+as
+return (
+	Select *
+	from yandexMarketSchema.Advertisement as yms_ad
+	where Id like @storeId
+);
+go
 ```
 
 
