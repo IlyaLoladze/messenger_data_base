@@ -3,8 +3,13 @@ The database's architecture for simple messenger. For the messanger example was 
 
 ## Building a project locally
 To create all tables with corresponding relations:
+
 ```plsql
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/db_creation_psql.sql'
+```
+```py
+for i in range(10):
+  print(10)
 ```
 
 
