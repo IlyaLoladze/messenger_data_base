@@ -1,6 +1,13 @@
 # messenger_data_base
 The database's architecture for simple messenger. For the messanger example was taken a <a href="https://telegram.org" target="_blank">telegram</a>. Made with PostgreSQL / psql.
 
+## Building a project locally
+To create all tables with corresponding relations:
+```
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/db_creation_psql.sql'
+```
+
+
 ## The structure of the database
 Description of used entities for messenger's database:
 1.  **USER** - a user of the messanger's application. He can create bots, channels (or subscribe), chats (or be invited), inboxes, write messages in chats, leave comments to posts, use application from different devices on the same account, add other users to contacts or block them.
