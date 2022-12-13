@@ -1,5 +1,5 @@
 # messenger_data_base
-The database's architecture for simple messenger. For the messanger example was taken a <a href="https://telegram.org" target="_blank">telegram</a>. Made with PostgreSQL / psql.
+The database's architecture for simple messenger. For the messanger example was taken a <a href="https://telegram.org" target="_blank">telegram</a>. Made on PostgreSQL.
 
 ## Building a project locally
 To create all tables with corresponding relations:
