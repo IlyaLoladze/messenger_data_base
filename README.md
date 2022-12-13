@@ -23,6 +23,10 @@ To fill tables with data generated on <a href="https://www.mockaroo.com" target=
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/bot_chat_member.sql'
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user_message.sql'
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/bot_message.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/inbox.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/inbox_chat.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/inbox_channel.sql'
+
 ```
 
 ## The structure of the database
