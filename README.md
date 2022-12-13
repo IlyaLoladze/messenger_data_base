@@ -3,36 +3,27 @@ The database's architecture for simple messenger. For the messanger example was 
 
 ## Building a project locally
 To create all tables with corresponding relations:
-
 ```plsql
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/db_creation_psql.sql'
 ```
-```py
-for i in range(10):
-  print(10)
+To fill tables with data (it was generated with <a href="https://www.mockaroo.com" target="_blank">mockaroo</a>*:
+```plsql
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/device.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user_device.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/verification.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/contact.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/channel.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/channel_subscribers.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/post.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/comment.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/bot.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/chat.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user_chat_member.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/bot_chat_member.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user_message.sql'
+\i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/bot_message.sql'
 ```
-```sql
-create function yandexMarketSchema.get_orders_by_user_id(@userId int)
-returns table
-as
-return (
-	Select *
-	from yandexMarketSchema.Order as yms_order
-	where Id like @userId
-);
-go
-
-create function yandexMarketSchema.get_ads_by_store_id(@storeId int)
-returns table
-as
-return (
-	Select *
-	from yandexMarketSchema.Advertisement as yms_ad
-	where Id like @storeId
-);
-go
-```
-
 
 ## The structure of the database
 Description of used entities for messenger's database:
