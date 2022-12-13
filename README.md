@@ -6,7 +6,7 @@ To create all tables with corresponding relations:
 ```plsql
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/db_creation_psql.sql'
 ```
-To fill tables with data (it was generated with <a href="https://www.mockaroo.com" target="_blank">mockaroo</a>*:
+To fill tables with data (it was generated with <a href="https://www.mockaroo.com" target="_blank">mockaroo</a>:
 ```plsql
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user.sql'
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/device.sql'
