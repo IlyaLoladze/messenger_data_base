@@ -3,11 +3,11 @@ The database's architecture for simple messenger. For the messanger example was 
 
 ## Building a project locally
 To create all tables with corresponding relations:
-```plsql
+```pgsql
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/db_creation_psql.sql'
 ```
 To fill tables with data (it was generated with <a href="https://www.mockaroo.com" target="_blank">mockaroo</a>:
-```plsql
+```pgsql
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user.sql'
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/device.sql'
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/data generation/user_device.sql'
