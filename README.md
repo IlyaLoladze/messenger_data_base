@@ -7,6 +7,10 @@ To create all tables with corresponding relations:
 \i '/Users/macbook/Desktop/messenger_data_base_copy/psql scripts/data base creation/db_creation_psql.sql'
 ```
 
+```
+SELECT * FROM public.user limit 100;
+```
+
 
 ## The structure of the database
 Description of used entities for messenger's database:
