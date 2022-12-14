@@ -58,7 +58,7 @@ Description of used entities for messenger's database:
 
 ## Some query examples
 Getting all user's chats and channels:
-```postgresql
+```postgres
 SELECT channel.name, channel.updated
 FROM public.user u
 	JOIN channel_subscribers cs ON u.id = cs.subscriber_id
