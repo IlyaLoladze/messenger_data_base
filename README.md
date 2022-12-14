@@ -53,7 +53,7 @@ Description of used entities for messenger's database:
 *was made on <a href="https://www.diagrams.net/blog/move-diagrams-net" target="_blank">diagrams.net</a>*
 
 ### Physical level
-![](https://github.com/IlyaLoladze/messenger_data_base/blob/main/ERD/Physical%20level.png)
+![]()
 *was made on <a href="https://dbeaver.io" target="_blank">DBeaver</a>*
 
 
