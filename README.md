@@ -116,4 +116,4 @@ ORDER BY user_name;
 ```
 ## Last but not least
 This project is only simplified model of messanger and has some limittions ans places to improve: adding pictures for users/chats, optimizations of ERD model, adding video / voice / photo message formats, creating tables for collecting historical data (deleted messages / posts / bots / user_devices), user actions (pushing buttons, logging in the application) or adding triggers / functions / procedures / indexes / some constraints.
-However, this MVP may be used as a base for developing more difficult project furthemore.
+However, this MVP may be used as a base for developing more difficult project in the future.
