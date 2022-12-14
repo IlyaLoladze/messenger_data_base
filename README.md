@@ -99,4 +99,19 @@ FROM (SELECT um.created as created, u.name as name, um.text as text
 		and c.id = 792) subq 
 ORDER BY created;
 ```
+Showing all user's contacts:
+```sql
+SELECT COALESCE(c.contact_name, contact_user.name) as user_name
+FROM public.contact c
+JOIN public.user contact_user ON c.contact_user_id = contact_user.id
+WHERE 1 = 1
+	and c.user_id = 24
+	and c.is_blocked IS FALSE
+	and (SELECT is_blocked 
+     	     FROM public.contact 
+	     WHERE 1 = 1
+		and public.contact.user_id = contact_user.id 
+		and public.contact.contact_user_id = 24) IS NOT TRUE
+ORDER BY user_name;
+```
 
