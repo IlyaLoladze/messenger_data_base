@@ -71,5 +71,32 @@ FROM public.user u
 	JOIN chat ON ucm.chat_id = chat.id
 WHERE u.id = 469;
 ```
+Getting all messages from particular chat:
+```sql
+-- for personal or group chat
+SELECT um.created, u.name, um.text
+FROM public.chat c 
+JOIN user_message um ON c.id = um.chat_id
+JOIN public.user u ON u.id = um.user_id
+WHERE 1 = 1
+	and c.id = 309
+ORDER BY um.created;
 
+-- for bot chat
+SELECT created, name, text
+FROM (SELECT um.created as created, u.name as name, um.text as text
+	FROM public.chat c 
+	JOIN user_message um ON c.id = um.chat_id
+	JOIN public.user u ON u.id = um.user_id
+	WHERE 1 = 1
+		and c.id = 792
+	UNION ALL
+	SELECT bm.created, b.name, bm.text
+	FROM public.chat c 
+	JOIN bot_message bm ON c.id = bm.chat_id
+	JOIN public.bot b ON b.id = bm.bot_id
+	WHERE 1 = 1
+		and c.id = 792) subq 
+ORDER BY created;
+```
 
