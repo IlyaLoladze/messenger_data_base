@@ -56,5 +56,20 @@ Description of used entities for messenger's database:
 ![](https://github.com/IlyaLoladze/messenger_data_base/blob/main/ERD/Physical%20level.png)
 *was made on <a href="https://dbeaver.io" target="_blank">DBeaver</a>*
 
+## Some query examples
+Getting all user's chats and channels:
+```postgresql
+SELECT channel.name, channel.updated
+FROM public.user u
+	JOIN channel_subscribers cs ON u.id = cs.subscriber_id
+	JOIN channel ON cs.channel_id = channel.id
+WHERE u.id = 469
+UNION ALL
+SELECT chat.name, chat.updated
+FROM public.user u
+	JOIN user_chat_member ucm ON ucm.user_id = u.id
+	JOIN chat ON ucm.chat_id = chat.id
+WHERE u.id = 469;
+```
 
 
